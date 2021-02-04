@@ -1,0 +1,115 @@
+ul, ol {
+    list-style:none;
+} 			/* ESTO LO USAMOS PARA QUITAR LOS PUNTOS DE LAS LISTAS ORDENADAS DE MODO QUE SOLO APAREZCA EL CONTENIDO*/
+
+
+.nav {
+    width:100%;
+    margin:0 auto;
+
+} /* AJUSTAMOS ANCHO DEL NAV(MENU) */
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color: darkgrey;
+
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    width: 150px;
+}
+
+.nav li a:hover {
+    background-color:grey;
+} /* PARA QUE LAS DIFERENTES OPCIONES DEL MENU SE ILUMINEN CUANDO PASAMOS EL RATON POR ENCIMA*/
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}/* PARA QUE LAS DIFERENTES OPCIONES DEL MENU SE ILUMINEN CUANDO PASAMOS EL RATON POR ENCIMA*/
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+section{
+    width: 100%;
+}
+.imgs
+{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.foto{
+    height: 500px;
+    width: 40%;
+}
+.container{
+
+
+    width: 95%;
+}
+.imgfooter{
+    width: 100%;
+}
+@media screen and (max-width: 980px) {
+
+    #contenedor {
+        width: 94%;
+    }
+    section {
+        width: 65%;
+    }
+    aside {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    section {
+        width: auto;
+        float: none;
+    }
+    aside {
+        width: auto;
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        height: auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    aside {
+        display: none;
+    }
+    section{
+
+        width: 100%;
+
+
+    }
+
+}
